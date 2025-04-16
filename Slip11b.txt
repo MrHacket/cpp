@@ -1,0 +1,76 @@
+Create a C++ base class Media. 
+Derive two different classes from it, class NewsPaper with data members N_Name, N_Editor, N_Price, No_of_Pages and class Magazine with
+ data members M_Name, M_Editor, M_Price. 
+ Write a C++ program to accept and display infornrntion of both NewsPaper and Magazine. (Use pure virtual function)         
+                                                                                                
+ #include<iostream.h>
+#include<conio.h>
+class media
+{
+public:
+virtual void display()=0;
+};
+// class NewsPaper with data members N_Name, N_Editor, N_Price, No_of_Pages
+class NewsPaper:public media
+{
+public:
+int No_of_Pages,N_Price;
+char N_Name[20],N_Editor[20];
+void getnewspaper()
+{
+cout<<"\nenter the No_of_Pages:";
+cin>>No_of_Pages;
+cout<<"\nenter the N_Price:";
+cin>>N_Price;
+cout<<"\nenter the N_Name:";
+cin>>N_Name;
+cout<<"\nenter the N_Editor:";
+cin>>N_Editor;
+}
+void display();
+};
+ 
+ 
+//class Magazine with data members M_Name, M_Editor, M_Price
+ 
+class Magazine:public media
+{
+public:
+char M_Name[10],M_Editor[10];
+int M_Price;
+ 
+void getMagazine()
+{
+cout<<"\nenter the M_Name is:";
+cin>>M_Name;
+cout<<"\nenter the M_Editor is:";
+cin>>M_Editor;
+cout<<"\nenter the M_Price is:";
+cin>>M_Price;
+}
+void display();
+};
+void NewsPaper::display()
+{
+cout<<"\n No_of_Pages:-"<<No_of_Pages;
+cout<<"\n N_Price:"<<N_Price;
+cout<<"\n N_Name:"<<N_Name;
+cout<<"\n N_Editor:"<<N_Editor;
+}
+void Magazine::display()
+{
+cout<<"\n M_Name is:"<<M_Name;
+cout<<"\n M_Editor is:"<<M_Editor;
+cout<<"\n M_Price is:"<<M_Price;
+}
+void main()
+{
+clrscr();
+NewsPaper b;
+b.getnewspaper();
+b.display();
+Magazine c;
+c.getMagazine();
+c.display();
+getch();
+};

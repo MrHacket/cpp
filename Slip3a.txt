@@ -1,0 +1,43 @@
+ Write a C++ program to create a class which contains two data members.
+ Write member functions to accept display and swap two entered numbers using call by reference. (Done)
+ 
+#include<iostream.h>
+#include<conio.h>
+class integer
+{
+public:
+int x,y;
+void getdata();
+void display();
+void swap(int &, int &);
+};
+void integer::getdata()
+{
+cout<<"Enter value of x and y:-\n";
+cin>>x>>y;
+}
+void integer::display()
+{
+cout<<"x="<<x;
+cout<<"\ty="<<y;
+}
+void integer::swap(int &p, int &q)
+{
+int temp;
+temp=p;
+p=q;
+q=temp;
+cout<<"\n\nAfter swap\n\n";
+cout<<"x="<<x;
+cout<<"\ty="<<y;
+}
+void main()
+{
+int x,y;
+integer i;
+clrscr();
+i.getdata();
+i.display();
+i.swap(x,y);
+getch();
+}   

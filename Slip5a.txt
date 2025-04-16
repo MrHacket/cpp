@@ -1,0 +1,61 @@
+Consider the following C++ class
+class Point
+{
+intx,y; public:
+void setpoint(int, int); void showpoint();
+};
+ // To set the values ofx and y co-ordinate .
+// To display co-ordinate of a point P in format (x, y).
+
+
+#include<iostream.h>
+#include<conio.h>
+ class Point
+{
+intx,y;
+public:
+void setpoint(int, int);
+void showpoint();
+};
+ // To set the values ofx and y co-ordinate .
+// To display co-ordinate of a point P in format (x, y).
+*/
+class point
+{
+int X, Y;
+ public:
+//defualt constructor
+point()
+{
+X=0;
+Y=0;
+}
+void setPoint(int a, int b)
+{
+X = a;
+Y = b;
+}
+/*
+int getX(void)
+{
+  return X;
+}
+int getY(void)
+{
+  return Y;
+}*/
+void showPoint()
+{
+cout<<"a"<<X;
+cout<<"b"<<Y;
+}
+};
+ 
+int main ()
+{
+point p1;
+ p1.setPoint(5,10);
+P1.showPoint();
+ /*//get points
+cout<<"p1: "<<p1.getX () <<" , "<<p1.getY () <<endl;*/
+ return 0 ; }

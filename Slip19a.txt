@@ -1,0 +1,34 @@
+Write a C++ program to find average of 3 integer numhers and average of 3 float numbers.(Use function overloading)
+ 
+#include<iostream.h>
+#include<conio.h>
+int add(int,int,int);
+float add(float,float,float);
+    
+int main()
+{
+int a1,a2,a3;
+float f1,f2,f3;
+clrscr();
+ 
+cout<<"Enter Integer Details:";
+cin>>a1>>a2>>a3;
+ 
+cout<<"Enter Float Details:";
+cin>>f1>>f2 >>f3;
+ 
+cout<<"\n Avarage of Integer "<<add(a1,a2,a3);
+cout<<"\n Avarage of float "<<add(f1,f2,f3);
+ 
+getch();                     
+return 0;
+}
+ 
+int add(int a1,int a2,int a3)
+{
+return ((a1+a2+a3)/3);
+}
+float add(float  f1,float  f2,float f3)
+{
+return float((f1+f2+f3)/3);
+}

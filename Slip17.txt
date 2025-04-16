@@ -1,0 +1,36 @@
+ Create a C++ class Employee with data members Emp_id, Emp_Name, Company_Name and Salary. Write member functions to accept and display Employee information. Design User  defined Manipulator to print Salary.
+(For Salary set right justification, maximum width to 7 and fill remaining spaces with '*')
+ #include<iostream.h>
+#include<conio.h>
+#include<iomanip.h>
+#include<stdlib.h>
+ class emp
+{
+public:
+int empid;
+char empname[30];
+char companyname[30];
+int salary;
+public:
+void get()
+{
+cout<<"\n Enter Employee Details. :";
+cin>>empid>>empname>>companyname>>salary;      
+}
+void put()
+{
+cout<<"\n Enter EmpId"<<empid;
+cout<<"\n Enter empname"<<empname;
+cout<<"\n Enter companyname"<<companyname;
+cout<<"\n Enter salary"<<setfill('*') <<setw(7)<<salary;       
+cout.setf(ios::right,ios::adjustfield);
+}
+};
+void main()
+{
+emp e;
+clrscr();
+e.get();
+e.put();
+getch();               
+}
