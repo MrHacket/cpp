@@ -1,0 +1,141 @@
+15 Marks
+
+1.Write a C++ program to check maximum and minimum of two integer numbers. (Use Inline function and Conditional operator) 
+
+2. Write a C++ program to find volume of cylinder, cone and sphere. (Use function overloading). 
+
+3. Write a C++ program to interchange values of two integer numbers. (Use call by reference)  3
+
+4.Write a C++ program to accept Worker information Worker_Name, No_of_Hours_worked, Pay_Rate
+and Salary. Write necessary functions to calculate and display the salary of Worker. (Use default value for Pay_Rate) 4
+
+5.Consider the following C++ class 
+class Point 
+int x,y; public: 
+void setpoint(int, int); void showpoint(); 
+// To set the values of x and y co-ordinate. // To display co-ordinate of a point P in format (x, y). 5
+
+6.Write a C++ program to create two Classes Square and Rectangle. Compare area of both the shapes 
+using friend function. Accept appropriate data members for both the classes.6
+
+7.Write a C++ program to create two Classes Square and Rectangle. Compare area of both the shapes 
+using friend function. Accept appropriate data members for both the classes.7 
+
+8. Write a C++ program to create a class Number, which contain static data member 'cnt and member function 'Display()'. 
+Display() should print number of times display operation is performed irrespective of the object responsible for calling Display(). 8
+
+9. Consider the following C++ class 
+class Person 
+char Name [20]; charAddr[30]; float Salary; 
+float tax_amount; public: // member functions 
+Calculate tax amount by checking salary of a person 
+• For salary <=20000 
+tax rate=0 
+• For salary >20000||<=40000 tax rate= 5% of salary. 
+• For salary >40000 
+tax rate =10% of salary.  9
+
+10.Write a C++ program to create a class Account with data members Acc_number, Acc_type and Balance. 
+Write member functions to accept and display 'n' account details. (Use dynamic memory allocation) 10
+
+11.Create a C++ class MyArray, which contains single dimensional integer array of a given size.
+ Write a member function to display sum of given array elements. (Use Dynamic Constructor and Destructor) 11
+
+12.Write a C++ program to create a class Date with data members day, month, and year. 
+Use default and parameterized constructor to initialize date and display date in dd-Mon-yyyy format.
+ (Example: Input: 04-01-2021 Output: 04-Jan-2021) 12
+
+13.Write a C++ program to create a class Product with data members Product_id, Product Name, Qty, Price.
+ Write member functions to accept and display Product information also display number of objects created for Product class. (Use Static data member and Static member function) 13
+
+14.Write a C++ program to accept radius of a Circle. Calculate and display diameter, circumference as well as area of a Circle. (Use Inline function) 14
+
+15.Write a C++ program to create a class Machine with data members Machine_Id, Machine_Name, Price. 
+Create and initialize all values of Machine object by using parameterized constructor and copy constructor.
+ Display details of Machine using setw() and setprecision().15
+
+16.Create a C++ class MyMatrix. Write a C++ program to accept and display a Matrix. Overload binary'-' 
+operator to calculate subtraction of two matrices. 16
+
+17. Write a C++ program to create a class Distance with data members meter and centimeter to represent 
+distance. Write a function Larger( )to return the larger of two distances. (Use this pointer) 17
+
+18.Create a C++ class Employee with data members Emp_id, Emp_Name, Company Name and Salary. 
+Write member functions to accept and display Employee information. Design User defined Manipulator to print Salary. (For Salary set right justification, maximum width to 7 and fill remaining spaces with "*') 18
+
+19.Write a C++ program to define two function templates for calculating the square and cube of given numbers with different data types. 19
+
+20.Write a C++ program to find average of 3 integer numbers and average of 3 float numbers. (Use function overloading) 20
+
+21. Write a C++ program to read array of 'n' integers from user and display it in reverse order. (Use Dynamic memory allocation)  21
+
+
+25 Marks
+1.Write a C++ program to create a base class Employee (Emp-code, name, salary). Derive two classes as 
+Fulltime (daily wages, number_of_days) and Parttime
+(number_of_working_hours, hourly_wages). Write a menu driven program to perform following functions: 1
+1. Accept the details of 'n' employees and calculate the salary. 2. Display the details of ‘n’ employees. 3. Display the details of employee having maximum salary for both types of employees. 2
+ 
+2. Create a C++ base class Shape. Derive three different classes Circle, Sphere and Cylinder from shape 
+class. Write a C++ program to calculate area of Circle, Sphere and Cylinder. (Use pure virtual function). 3
+
+3.Create a C++ class
+class Matrix 
+int **p; 
+int r, c; public: 
+//member functions 
+Write necessary member functions to: 
+i. Accept Matrix elements ii. Display Matrix elements. 111. Calculate transpose of a Matrix. (Use constructor and destructor) 4
+
+4.Create a C++ class Person with data members Person_name, Mobile number, Age, City.
+Write 
+necessary member functions for the following: 
+i. Search the mobile number of given person. ii. Search the person name of given mobile number. iii. Search all person details of given city. (Use function overloading) 5
+ 
+5.Create a C++ class City with data members City_code, City_name, population. Write necessary member 
+functions for the following:
+i. Accept details of n cities ii. Display details of n cities in ascending order of population. iii. Display details of a particular city. (Use Array of object and to display city information use manipulators.) 6
+
+6.Create a base class Student with data members Roll No. Name. Derives two classes from it, class 
+Theory with data members M1, M2, M3, M4 and class Practical with data members P1, P2. Class Result(Total_Marks, Percentage, Grade) inherits both Theory and Practical classes. (Use concept of Virtual Base Class and protected access specifiers) Write a C++ menu driven program to perform the following functions: i. Accept Student Information ii. Display Student Information 111. Calculate Total_marks, Percentage and Grade. 7
+ 
+7.Create a C++ class Cuboid with data members length, breadth, and height. Write necessary member 
+functions for the following: 
+i. void setvalues(float,float,float) to set values of data members. ii. void getvalues() to display values of data members. iii. float volume to calculate and return the volume of cuboid. iv. float surface_area() to calculate and return the surface area of cuboid. (Use Inline function) 8
+
+8.Write a C++ class Seller (S_Name, Product_name, Sales Quantity, Target_Quantity, Month, 
+Commission). Each salesman deals with a separate product and is assigned a target for a month. At the end of the month his monthly sales iscompared with target and commission is calculated as follows: 
+• If Sales Quantity>Target_Quantity then   is 25% of extra sales made + 10% of target. 
+• If Sales Quantity = Target_Quantitythen commission is 10% of target. Otherwise commission is zero. Display salesman information along with commission obtained. (Use array of objects) 9
+ 
+9.Create a C++ class MyMatrixand Write necessary member functions for the following: 
+i. To accept a Matrix ii. To display a Matrix iii. Overload unary '-' operator to calculate transpose of a Matrix. iv. Overload unary '+' operator to increment matrix elements by 1. (10)
+ 
+10.Design two base classes Student (S_id, Name, Class) and Competition (C_id, C_Name). Derive a class 
+Stud Comp(Rank) from it. Write a menu driven program to perform following functions: i. Accept information. ii. Display information. iii. Display Student Details in the ascending order of Rank of a specified competition. 
+(Use array of objects) 11
+
+11.Create a C++ base class Media. Derive two different classes from it, class NewsPaper with data 
+members N_Name, N_Editor, N_Price, No_of_Pagesand class Magazine with data members M_Name, M_Editor, M Price. Write a C++ program to accept and display information of both NewsPaperand Magazine. (Use pure virtual function) [Marks 25) 12
+
+12.Create a C++ class for inventory of Mobiles with data members Model,
+Mobile 
+Company, Color, Price and Quantity. Mobile can be sold, if stock is available, otherwise purchase will be made. Write necessary member functions for the following: i. To accept mobile details from user. ii. To sale a mobile. (Sale contains Mobile details &number of mobiles to be sold.) iii. To Purchase a Mobile. (Purchase contains Mobile details &number of mobiles to be purchased) 13
+ 
+13.Write a C++ program to read the contents of a “SampleData.txt" file. Create "Upper.txt" file to store 
+uppercase characters, "Lower.txt" file to store lowercase characters, “Digit.txt" file to store digits and “Other.txt" file to store remaining characters of a given file. 14
+ 
+14.Create a base class Travels with data members T_no, Company_Name. Derive a class Route with data 
+members Route id, Source, and Destination from Travels class. Also derive a class Reservation with 
+data members Number_of_Seats, Travels Class, Fare, and Travel Date from Route. Write a C++ program to perform following necessary member functions: i. Accept details of 'n' reservations. ii. Display details of all reservations. iii. Display reservation details of a specified Date. 15
+
+15.Create a C++ class Employee with data members Emp_Id, Emp Name, Mobile No, Salary. Write 
+necessary member functions for the 
+following: 
+i. Accept details of n employees ii. Display employee 
+details in descending order of their salary. iii. 
+Display details of a particular employee. (Use 
+       Array of object and Use appropriate manipulators) 16
+
+16.Create a C++ class VisitingStaffwith data members Name, No of Subjects, Name_of_Subjects[],Working hours, Total_Salary. (Number of subjects varies for a Staff).Writea 
+ctorto initialize the data members and create an array for Name of Subjects dynamically. Display Visiting Staff details by calculating salary. (Assume remuneration Rs. 300 per working hour)  17
